@@ -1,0 +1,29 @@
+{
+    "name": "@soft-boy/zeta",
+    "version": "1.0.0",
+    "main": "zeta.js",
+    "bin": {
+        "zeta": "./zeta.js"
+    },
+    "files": [
+        "zeta.js",
+        "agent-loop.js",
+        "lib/",
+        "tools/"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "start": "node --env-file=.env zeta.js",
+        "format": "prettier --write .",
+        "prepare": "husky"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "minimal coding harness",
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "prettier": "^3.8.1"
+    }
+}
