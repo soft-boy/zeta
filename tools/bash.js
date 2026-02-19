@@ -21,7 +21,7 @@ const parameters = {
 
 const execBash = async ({ command }) => {
     return new Promise((resolve) => {
-        config = {
+        const config = {
             maxBuffer: 10 * 1024 * 1024, // 10MB max buffer
             shell: '/bin/bash',
         };
